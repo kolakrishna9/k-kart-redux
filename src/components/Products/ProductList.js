@@ -11,7 +11,7 @@ const ProductList = ({products, loading, getProducts}) => {
 
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [getProducts]);
 
   const handleFilterChange = (option) => {
     if (selectedFilters.includes(option)) {
